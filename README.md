@@ -39,3 +39,7 @@
 -   php artisan migrate --seed
 -   php artisan serve
 -   npm run dev
+
+##### DB Diagram
+
+![DB Diagram Image](https://booking-flights.pablomazo.dev/Booking-flights-Diagram.png "Diagram").
