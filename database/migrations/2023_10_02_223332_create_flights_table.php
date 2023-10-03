@@ -1,0 +1,36 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class CreateFlightsTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('flights', function (Blueprint $table) {
+            $table->id();
+            $table->string('country_origin', 50);
+            $table->string('country_destiny', 50);
+            $table->dateTime('departure_time', $precision = 0);
+            $table->dateTime('eta', $precision = 0);
+            $table->tinyInteger('tickets_available');
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('flights');
+    }
+}
