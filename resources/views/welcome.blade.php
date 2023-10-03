@@ -58,7 +58,7 @@
 
                 <div class="flex justify-center mt-4 items-center">
                     @auth
-                        <a href="{{ url('/home') }}" class="text-lg text-gray-700 dark:text-gray-500 underline">Vuelos</a>
+                        <a href="{{ url('/vuelos') }}" class="text-lg text-gray-700 dark:text-gray-500 underline">Vuelos</a>
                     @else
                         <a href="{{ route('login') }}" class="text-lg text-gray-700 dark:text-gray-500 underline">Ingresar</a>
 
